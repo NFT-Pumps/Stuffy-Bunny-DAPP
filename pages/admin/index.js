@@ -11,7 +11,7 @@ export default function Home() {
           content={process.env.siteTitle}
         />
 
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <AdminComponents />
     </div>

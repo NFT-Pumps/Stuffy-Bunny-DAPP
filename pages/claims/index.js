@@ -96,7 +96,7 @@ export default function Claim() {
           content={process.env.siteTitle}
         />
 
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <>
         <div className="static-slider-head banner2">
