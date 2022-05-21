@@ -2,6 +2,7 @@ import React, { useReducer, useState, useEffect } from 'react';
 import Link from "next/link";
 import { Container, Row, Col } from "reactstrap";
 import Image from "next/image";
+import bannerimg from "../../assets/images/landingpage/monster.gif";
 import NFTWalletBridge from '../nftWalletBridge'
 import WalletConnectProvider from "@walletconnect/web3-provider";
 
@@ -93,12 +94,12 @@ const MintPage = () => {
           <Row className="">
             {(!currentUseState.isConnected) ?
               <Col lg="6" md="6" className="align-self-center">
-                {(currentUseState.network == "rinkeby") ? <h3 style={{ color: "##8101a7" }}>DEMO ONLY RINKEBY</h3> : ""}
+                {(currentUseState.network == "rinkeby") ? <h3 style={{ color: "#fff" }}>DEMO ONLY RINKEBY</h3> : ""}
                 <h3 className="title">
-                  NFTS FOR REAL WORLD USE
+                  A blockchain project built by Community.
                 </h3>
                 <h4 className="subtitle font-light">
-                  Blending the power of NFTs and real life business. We are lowering the barrier to entry into the NFT space, making this a perfect first time project for anyone.
+                  An original collection consisting of 3,333 unique Monsters living on the Ethereum blockchain
                   <br />
                 </h4>
                 <a

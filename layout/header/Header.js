@@ -12,6 +12,7 @@ import {
   Container,
   NavLink,
 } from "reactstrap";
+import logo from "../../assets/images/logos/monster-logo.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
