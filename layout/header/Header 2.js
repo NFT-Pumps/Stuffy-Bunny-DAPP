@@ -12,7 +12,6 @@ import {
   Container,
   NavLink,
 } from "reactstrap";
-import logo from "../../assets/images/logos/blank.png.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
