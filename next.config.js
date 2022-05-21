@@ -16,7 +16,7 @@ module.exports = {
     network: 'rinkeby',
     chainId: 1337,
     //mintType: "Whitelist",
-    blockExplorerURL: 'https://etherscan.io/',
+    blockExplorerURL: 'https://rinkeby.etherscan.io/',
     www: 'https://stuffybunnynft.com/',
     mainWWW: 'https://stuffybunnynft.com/',
     title: 'Stuffy Bunny NFT',
