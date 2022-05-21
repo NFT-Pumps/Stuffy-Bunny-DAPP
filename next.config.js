@@ -14,7 +14,7 @@ module.exports = {
     ethWLValue : "0.0",
     debug: false,
     network: 'rinkeby',
-    chainId: 137,
+    chainId: 1337,
     //mintType: "Whitelist",
     blockExplorerURL: 'https://rinkeby.etherscan.io',
     www: 'https://stuffybunnynft.com/',
