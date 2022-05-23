@@ -76,7 +76,7 @@ const Header = () => {
                   </Link>
                 </NavItem>
                 <NavItem>
-                <Link href={process.env.links.opensea}>
+                  <Link href={process.env.links.opensea}>
                     <a
                       className={
                         router.pathname == "/basic"
@@ -87,7 +87,7 @@ const Header = () => {
                       OpenSea
                     </a>
                   </Link>
-                </NavItem>                
+                </NavItem>
               </Nav>
               {/* <div className="act-buttons">
                 <NavLink
