@@ -119,7 +119,7 @@ export default function Claim() {
                     Connect Wallet
                   </a>
                   <Link href={process.env.mainWWW}>
-                    <a className="btn btn-md m-t-30  btn-outline-light " style={{ backgroundColor: "#760680" }}>
+                    <a className="btn btn-md m-t-30  btn-outline-light " style={{ backgroundColor: "#741ea1" }}>
                       Back Home
                     </a>
                   </Link>
@@ -164,14 +164,15 @@ export default function Claim() {
                             </> :
                             <>
                               <hr />
-                              <h1 className="subtitle font-light">Communicating with the blockchain!</h1>
+                              <h1 className="subtitle font-light" style={{ color: "#000000"}}>Communicating with the blockchain!</h1>
                             </>}
                         </>
-                        : <h1 className="subtitle font-light">You are not on the whitelist</h1>
+                        : <h1 className="subtitle font-light" style={{ color: "#000000"}}>You are not on the whitelist</h1>
                       }
                       <a
                         onClick={() => walletBridge1.disconnect()}
-                        className="btn btn-md m-t-30 btn-outline-light "
+                        className="btn btn-md m-t-30 btn-outline-light " style={{ backgroundColor: "#741ea1" }}
+
                       >
                         Disconnect Wallet
                       </a>
@@ -184,7 +185,7 @@ export default function Claim() {
                       {currentUseState.hashHtml}
                     </>
                     :
-                    <h1 className="subtitle font-light">Claim mint is currently closed!</h1>
+                    <h1 className="subtitle font-light" style={{ color: "#000000"}}>Claim mint is currently closed!</h1>
                   }
                 </Col>
               }
