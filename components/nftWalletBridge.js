@@ -272,7 +272,7 @@ export default function NFTWalletBridge(e) {
             let thisWL = Whitelist();
 
             let txTransfer1 = await contract.methods
-                .afterHoursMonsterMint(props.mint, thisWL[connectedWalletAddress].q, thisWL[connectedWalletAddress].monsterPass)
+                .afterHoursMonsterMint(props.mint, thisWL[connectedWalletAddress].q, thisWL[connectedWalletAddress].whitelistClaimPass)
                 .send({ from: connectedWalletAddress, value: bntokens })
                 .on('transactionHash', function (hash) {
                     //hashArray = [];
