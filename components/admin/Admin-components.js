@@ -189,7 +189,7 @@ const AdminComponents = () => {
                 <a
                   onClick={() => walletBridge1.disconnect()}
                   className="btn btn-md m-t-30 btn-outline-light "
-                  style={{ backgroundColor: "#760680" }}
+                  style={{ backgroundColor: "#741ea1" }}
                 >
                   Disconnect Wallet
                 </a>
