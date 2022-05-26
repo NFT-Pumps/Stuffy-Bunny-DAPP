@@ -325,6 +325,19 @@ export default function ContractABI() {
             "type": "function"
         },
         {
+            "inputs": [],
+            "name": "collectionHash",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
             "inputs": [
                 {
                     "internalType": "uint256",
@@ -694,6 +707,19 @@ export default function ContractABI() {
                 }
             ],
             "name": "setBaseURI",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "newHash",
+                    "type": "string"
+                }
+            ],
+            "name": "setCollectionHash",
             "outputs": [],
             "stateMutability": "nonpayable",
             "type": "function"
@@ -1079,7 +1105,7 @@ export default function ContractABI() {
                             "type": "uint8"
                         }
                     ],
-                    "internalType": "struct GenericNFTPumpContract.WhitelistClaimPass",
+                    "internalType": "struct StuffyBunny.WhitelistClaimPass",
                     "name": "whitelistClaimPass",
                     "type": "tuple"
                 }
