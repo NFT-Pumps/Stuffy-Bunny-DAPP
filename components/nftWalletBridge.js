@@ -244,7 +244,7 @@ export default function NFTWalletBridge(e) {
 
         if (props.mintType == "Public") {
             let txTransfer = await contract.methods
-                .openMonsterMint(props.mint)
+                .openMint(props.mint)
                 .send({ from: connectedWalletAddress, value: bntokens })
                 .on('transactionHash', function (hash) {
                     //hashArray = [];
@@ -272,7 +272,7 @@ export default function NFTWalletBridge(e) {
             let thisWL = Whitelist();
 
             let txTransfer1 = await contract.methods
-                .afterHoursMonsterMint(props.mint, thisWL[connectedWalletAddress].q, thisWL[connectedWalletAddress].whitelistClaimPass)
+                .whitelistClaimMint(props.mint, thisWL[connectedWalletAddress].q, thisWL[connectedWalletAddress].whitelistClaimPass)
                 .send({ from: connectedWalletAddress, value: bntokens })
                 .on('transactionHash', function (hash) {
                     //hashArray = [];
