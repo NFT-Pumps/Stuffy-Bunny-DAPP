@@ -3,6 +3,16 @@ export default function ContractABI() {
         {
             "inputs": [
                 {
+                    "internalType": "string",
+                    "name": "contractName",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "contractSymbol",
+                    "type": "string"
+                },
+                {
                     "internalType": "address",
                     "name": "_vault",
                     "type": "address"
@@ -239,43 +249,16 @@ export default function ContractABI() {
             "type": "function"
         },
         {
-            "inputs": [
+            "inputs": [],
+            "name": "ProjectTeam",
+            "outputs": [
                 {
-                    "internalType": "uint8",
-                    "name": "quantity",
-                    "type": "uint8"
-                },
-                {
-                    "internalType": "uint8",
-                    "name": "claimable",
-                    "type": "uint8"
-                },
-                {
-                    "components": [
-                        {
-                            "internalType": "bytes32",
-                            "name": "r",
-                            "type": "bytes32"
-                        },
-                        {
-                            "internalType": "bytes32",
-                            "name": "s",
-                            "type": "bytes32"
-                        },
-                        {
-                            "internalType": "uint8",
-                            "name": "v",
-                            "type": "uint8"
-                        }
-                    ],
-                    "internalType": "struct SuitsOnSuits.MonsterPass",
-                    "name": "monsterPass",
-                    "type": "tuple"
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
                 }
             ],
-            "name": "afterHoursMonsterMint",
-            "outputs": [],
-            "stateMutability": "payable",
+            "stateMutability": "view",
             "type": "function"
         },
         {
@@ -399,7 +382,7 @@ export default function ContractABI() {
         },
         {
             "inputs": [],
-            "name": "mTL",
+            "name": "maxWhitelistPassMints",
             "outputs": [
                 {
                     "internalType": "uint256",
@@ -408,37 +391,6 @@ export default function ContractABI() {
                 }
             ],
             "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [],
-            "name": "maxAfterHoursMonsterMints",
-            "outputs": [
-                {
-                    "internalType": "uint256",
-                    "name": "",
-                    "type": "uint256"
-                }
-            ],
-            "stateMutability": "view",
-            "type": "function"
-        },
-        {
-            "inputs": [
-                {
-                    "internalType": "address",
-                    "name": "to",
-                    "type": "address"
-                },
-                {
-                    "internalType": "uint256",
-                    "name": "amount",
-                    "type": "uint256"
-                }
-            ],
-            "name": "monsterMint",
-            "outputs": [],
-            "stateMutability": "nonpayable",
             "type": "function"
         },
         {
@@ -462,7 +414,7 @@ export default function ContractABI() {
                     "type": "uint256"
                 }
             ],
-            "name": "openMonsterMint",
+            "name": "openMint",
             "outputs": [],
             "stateMutability": "payable",
             "type": "function"
@@ -539,6 +491,19 @@ export default function ContractABI() {
                     "internalType": "bool",
                     "name": "",
                     "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "publicMintMaxLimit",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
                 }
             ],
             "stateMutability": "view",
@@ -773,12 +738,12 @@ export default function ContractABI() {
                 },
                 {
                     "internalType": "uint256",
-                    "name": "setopenMonsterMintLimit",
+                    "name": "setOpenMintLimit",
                     "type": "uint256"
                 },
                 {
                     "internalType": "uint256",
-                    "name": "setafterHoursMonsterMintLimit",
+                    "name": "setWhistlistPassMintLimit",
                     "type": "uint256"
                 },
                 {
@@ -927,6 +892,24 @@ export default function ContractABI() {
             "type": "function"
         },
         {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "to",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                }
+            ],
+            "name": "teamMint",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
             "inputs": [],
             "name": "togglePresaleMint",
             "outputs": [],
@@ -1069,24 +1052,46 @@ export default function ContractABI() {
         {
             "inputs": [
                 {
-                    "internalType": "address[]",
-                    "name": "_payees",
-                    "type": "address[]"
+                    "internalType": "uint8",
+                    "name": "quantity",
+                    "type": "uint8"
                 },
                 {
-                    "internalType": "uint256[]",
-                    "name": "_shares",
-                    "type": "uint256[]"
+                    "internalType": "uint8",
+                    "name": "claimable",
+                    "type": "uint8"
+                },
+                {
+                    "components": [
+                        {
+                            "internalType": "bytes32",
+                            "name": "r",
+                            "type": "bytes32"
+                        },
+                        {
+                            "internalType": "bytes32",
+                            "name": "s",
+                            "type": "bytes32"
+                        },
+                        {
+                            "internalType": "uint8",
+                            "name": "v",
+                            "type": "uint8"
+                        }
+                    ],
+                    "internalType": "struct GenericNFTPumpContract.WhitelistClaimPass",
+                    "name": "whitelistClaimPass",
+                    "type": "tuple"
                 }
             ],
-            "name": "updateSplitter",
+            "name": "whitelistClaimMint",
             "outputs": [],
-            "stateMutability": "nonpayable",
+            "stateMutability": "payable",
             "type": "function"
         },
         {
             "inputs": [],
-            "name": "whitelistTokenPrice",
+            "name": "whitelistMintMaxLimit",
             "outputs": [
                 {
                     "internalType": "uint256",
@@ -1099,7 +1104,7 @@ export default function ContractABI() {
         },
         {
             "inputs": [],
-            "name": "whitelistmTL",
+            "name": "whitelistTokenPrice",
             "outputs": [
                 {
                     "internalType": "uint256",
