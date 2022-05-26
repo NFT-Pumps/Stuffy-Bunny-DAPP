@@ -18,7 +18,7 @@ module.exports = {
     pageHeader : 'NFTs for real world use',
     pageText : 'Blending the power of NFTs and real life business. We are lowering the barrier to entry into the NFT space, making this a perfect first time project for anyone',
     //mintType: "Whitelist",
-    blockExplorerURL: 'https://etherscan.io',
+    blockExplorerURL: 'https://etherscan.io/',
     www: 'https://stuffybunnynft.com/',
     mainWWW: 'https://stuffybunnynft.com/',
     title: 'Stuffy Bunny NFT',
