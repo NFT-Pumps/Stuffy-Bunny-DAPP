@@ -1,10 +1,10 @@
 export default function Whitelist4() {
 return {
   '0xCd43AdcB61949ab14D3f4574BFbDA53d46389715': {
-    q: 30,
+    q: 66,
     whitelistClaimPass: {
-      r: '0x2f6dd67059e96cc52806fa5929e75a5dc6f922ace350a843d5ea4ccd365e288c',
-      s: '0x0766a5fca0c69637b9af532c0eee98a94b60af1e9bcc1cd5e21a0ca9f9f65fca',
+      r: '0x466a7d1a21360bbc4052048e0b0dfe0e253f43e263c4f6b799a0a065bd5d4710',
+      s: '0x63853f9d118931d2cc9ae363e5def2e971ef740562ef8bcf2e7f923fc0cdd1ef',
       v: 28
     }
   },
@@ -536,4 +536,5 @@ return {
       v: 28
     }
   }
+}
 }
