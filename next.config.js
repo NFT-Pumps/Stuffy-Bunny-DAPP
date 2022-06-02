@@ -10,8 +10,8 @@ module.exports = {
     defaultGas: 125000,//75000,
     mintType : "Pre-Sale", //Pre-Sale Public
     enforceWhitelist : true,
-    ethValue : "0.07",
-    ethWLValue : "0.07",
+    ethValue : "0.01",
+    ethWLValue : "0.01",
     debug: false,
     network: 'mainnet',
     chainId: 1,
