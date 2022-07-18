@@ -142,7 +142,7 @@ export default function Claim() {
                         <>
                           {(currentUseState.isWaiting == false) ?
                             <>
-                              <label className="connected">Number of Claimable Monsters (1-{currentUseState.whiteListPass.q}):</label>
+                              <label className="connected">Number of Claimable Bunnies (1-{currentUseState.whiteListPass.q}):</label>
                               <div className="">
                                 <div className="input-group">
                                   <div className="input-group-prepend">
@@ -164,10 +164,10 @@ export default function Claim() {
                             </> :
                             <>
                               <hr />
-                              <h1 className="subtitle font-light" style={{ color: "#000000"}}>Communicating with the blockchain!</h1>
+                              <h1 className="subtitle font-light" style={{ color: "#cc8899"}}>Communicating with the blockchain!</h1>
                             </>}
                         </>
-                        : <h1 className="subtitle font-light" style={{ color: "#000000"}}>You are not on the whitelist</h1>
+                        : <h1 className="subtitle font-light" style={{ color: "#cc8899"}}>You are not on the whitelist</h1>
                       }
                       <a
                         onClick={() => walletBridge1.disconnect()}
