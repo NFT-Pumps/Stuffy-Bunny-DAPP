@@ -22,7 +22,7 @@ Header 6
 *******************/
 .header6 {
   .navbar-toggler {
-    color: $white;
+    color: $purple;
   }
 }
 
@@ -821,7 +821,7 @@ Vertical tabs
 .tabs-vertical li .nav-link.active:focus {
   background: $themecolor;
   border: 0px;
-  color: $white;
+  color: $purple;
 }
 
 /*Custom vertical tab*/
@@ -850,11 +850,11 @@ Vertical tabs
 
       &.active {
         background: $themecolor;
-        color: $white;
+        color: $purple;
       }
 
       &:hover {
-        color: $white;
+        color: $black;
         background: $themecolor;
       }
     }
