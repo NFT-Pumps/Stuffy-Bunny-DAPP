@@ -44,7 +44,7 @@ export default function Claim() {
     if (mintNum > 0) {
       const returnedhash = await walletBridge1.sendMint(props);
     }
-    setNum(0)
+    setNum(1)
     if (process.env.debug) {
       console.log(returnedhash)
     }
