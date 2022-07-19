@@ -22,7 +22,7 @@ Header 6
 *******************/
 .header6 {
   .navbar-toggler {
-    color: $white;
+    color: $purple;
   }
 }
 
@@ -74,14 +74,14 @@ Header 6
 
 
   .title {
-    color: $white;
+    color: $purple;
     font-weight: 700;
     font-size: 42px;
     line-height: 54px;
   }
 
   .connected {
-    color: $white;
+    color: $purple;
     // text-transform: uppercase;
     font-weight: 300;
     font-size: 20px;
@@ -821,7 +821,7 @@ Vertical tabs
 .tabs-vertical li .nav-link.active:focus {
   background: $themecolor;
   border: 0px;
-  color: $white;
+  color: $purple;
 }
 
 /*Custom vertical tab*/
@@ -850,11 +850,11 @@ Vertical tabs
 
       &.active {
         background: $themecolor;
-        color: $white;
+        color: $purple;
       }
 
       &:hover {
-        color: $white;
+        color: $black;
         background: $themecolor;
       }
     }
