@@ -149,7 +149,7 @@ export default function Claim() {
                                     <button className="btn btn-outline-primary" type="button" onClick={decNum}>-</button>
                                   </div>
                                   <div className="input-group-prepend">
-                                    <input type="number" id="mints" name="mints" className="form-control" value={mintNum} min="0" max={currentUseState.whiteListPass.q} onChange={handleChange} />
+                                    <input type="number" id="mints" name="mints" className="form-control" value={mintNum} min="1" max={currentUseState.whiteListPass.q} onChange={handleChange} />
                                   </div>
                                   <div className="input-group-prepend">
                                     <button className="btn btn-outline-primary" type="button" onClick={incNum}>+</button>
