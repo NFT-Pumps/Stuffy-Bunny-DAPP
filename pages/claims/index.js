@@ -41,12 +41,11 @@ export default function Claim() {
 
   async function SendMint(props) {
     props.mintType = "Pre-Sale";
-    if (mintNum > 0) {
-      const returnedhash = await walletBridge1.sendMint(props);
-    }
-    setNum(Number(mintNum) + 1)
-    if (process.env.debug) {
-      console.log(returnedhash)
+    if (mintNum < +process.env.maxMintCount) {
+      console.log(mintNum)
+      console.log(process.env.maxMint)
+      console.log(mintNum <= +process.env.maxMint)
+      setNum(Number(mintNum) + 1);
     }
   }
 
