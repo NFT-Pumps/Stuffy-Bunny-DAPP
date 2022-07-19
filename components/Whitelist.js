@@ -793,7 +793,7 @@ return {
     }
   },
   '0xCd43AdcB61949ab14D3f4574BFbDA53d46389715': {
-    q: 8,
+    q: 82,
     whitelistClaimPass: {
       r: '0x5329e144ba42a75c5787e7ff8ae23cfbf3b3ab345f73465f75ba98c9e1e1556b',
       s: '0x11bf8e600753e5f214ef1e1de854a73a8a61b1fb3b80b1ab82d807a94203fec3',
