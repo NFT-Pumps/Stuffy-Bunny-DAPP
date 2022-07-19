@@ -41,11 +41,12 @@ export default function Claim() {
 
   async function SendMint(props) {
     props.mintType = "Pre-Sale";
-    if (mintNum < +process.env.maxMintCount) {
-      console.log(mintNum)
-      console.log(process.env.maxMint)
-      console.log(mintNum <= +process.env.maxMint)
-      setNum(Number(mintNum) + 1);
+    if (mintNum > 0) {
+      const returnedhash = await walletBridge1.sendMint(props);
+    }
+    setNum(0)
+    if (process.env.debug) {
+      console.log(returnedhash)
     }
   }
 
@@ -104,10 +105,10 @@ export default function Claim() {
               {(!currentUseState.isConnected) ?
                 <Col lg="6" md="6" className="align-self-center">
                   {(currentUseState.network == "rinkeby") ? <h3 style={{ color: "#fff" }}>DEMO ONLY RINKEBY</h3> : ""}
-                  <h3 className="title" style={{ color: "#6d1b7b"}}>
+                  <h3 className="title" style={{ color: "#000000"}}>
                     { process.env.pageHeader }
                   </h3>
-                  <h4 className="subtitle font-light" style={{ color: "#6d1b7b"}}>
+                  <h4 className="subtitle font-light" style={{ color: "#000000"}}>
                     { process.env.pageText }
                     <br />
                   </h4>
@@ -163,10 +164,10 @@ export default function Claim() {
                             </> :
                             <>
                               <hr />
-                              <h1 className="subtitle font-light" style={{ color: "#6d1b7b"}}>Communicating with the blockchain!</h1>
+                              <h1 className="subtitle font-light" style={{ color: "#cc8899"}}>Communicating with the blockchain!</h1>
                             </>}
                         </>
-                        : <h1 className="subtitle font-light" style={{ color: "#6d1b7b"}}>You are not on the whitelist</h1>
+                        : <h1 className="subtitle font-light" style={{ color: "#cc8899"}}>You are not on the whitelist</h1>
                       }
                       <a
                         onClick={() => walletBridge1.disconnect()}
@@ -184,7 +185,7 @@ export default function Claim() {
                       {currentUseState.hashHtml}
                     </>
                     :
-                    <h1 className="subtitle font-light" style={{ color: "#6d1b7b"}}>Claim mint is currently closed!</h1>
+                    <h1 className="subtitle font-light" style={{ color: "#000000"}}>Claim mint is currently closed!</h1>
                   }
                 </Col>
               }
